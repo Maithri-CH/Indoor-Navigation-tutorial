@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <title>Computer vision Project 1</title>
+  <style>
+
+
+    #table_of_content {
+      width: 200px;
+      position: fixed;
+      font-size: 15px;
+      height: 100%;
+      overflow: auto;
+    }
+
+    #table_of_content a:hover {
+      color: #000000;
+    }
+
+    #table_of_content a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      color: #818181;
+      display: block;
+    }
+
+    div #page-content-wrapper {
+      margin-left: 200px;
+      font-size: 15px;
+      margin-top: 50px;
+      position: relative;
+           height: 1000px;
+    }
+
+
+
+    section.home-section {
+      padding-top: 5rem !important;
+      padding-bottom: 5rem !important;
+    }
+
+    section.home-section .home-item .home-date {
+      min-width: none;
+    }
+
+    @media (min-width: 768px) {
+      section.resume-section {
+        min-height: 100vh;
+      }
+
+      section.home-section .home-item .home-date {
+        min-width: 18rem;
+      }
+    }
+
+    @media (min-width: 992px) {
+      section.home-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
+    }
+
+
+
+    h4 {
+      text-align: center;
+    }
+
+    p.center {
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="table_of_content">
+
+
+      <div class="list-group list-group-flush" id="table">
+<br><br><br><br>
+        <h4>Table of content</h4>
+        <a href="#section1" class="list-group-item list-group-item-action bg-light">Introduction and Problem Definition</a>
+        <a href="#section2" class="list-group-item list-group-item-action bg-light">Sensor Possibilities</a>
+        <a href="#section3" class="list-group-item list-group-item-action bg-light">Indoor Navigation techniques</a>
+        <a href="#section4" class="list-group-item list-group-item-action bg-light">Success and Failures</a>
+        <a href="#section5" class="list-group-item list-group-item-action bg-light">Challenges</a>
+        <a href="#section6" class="list-group-item list-group-item-action bg-light">Future </a>
+        <a href="#section7" class="list-group-item list-group-item-action bg-light">Related Videos </a>
+        <a href="#section8" class="list-group-item list-group-item-action bg-light">Quiz </a>
+        <a href="#section9" class="list-group-item list-group-item-action bg-light">References </a>
+
+        </a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" data-spy="scroll" data-target="#table" data-offset="20">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <h3 class="navbar-text">Indoor Navigation Using Computer Vision</h3>
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  <div class="container-fluid p-0" >
+      <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section1">
+        <div class="w-100">
+
+          <h1 class="mb-0">Introduction & Problem Definition
+
+          </h1>
+
+          <p> Many a time, I find it difficult to get direction indoors in a new place. I have seen many freshers at school having a hard time finding direction to their classrooms on the first day. It might get even harder for a person with low
+            vision.
+          <br>
+          People are relying more on their smartphones for navigation.GPS works well for outdoor navigation, but it isn't accurate for indoor navigation. Currently, there is no indoor navigation system that is both economical and accurate.<br>
+            The focus of this project is to find the current location of a user at indoors which will help in developing a solution to indoor navigation problem to help especially people who have low vision to navigate thru indoors.</p>
+
+        </div>
+
+      </section>
+
+      <hr class="m-0">
+      <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section2">
+        <div class="w-100">
+          <h1 class="mb-0">Sensor Possibilities
+
+          </h1>
+
+          <p>
+            In this project,we will be using only the camera and sensors that are available in smartphones <br>
+            There have been indoor navigation solutions using Infrared , Bluetooth beacons, wifi signal strength, RFID sensors, inertial sensors to track the user’s movements. These methods are not very economical as incur initial setup and
+            maintenance cost. Also it is not practical to setup base staitions for every indoors that we need to navigate thru.
+
+          </p>
+
+        </div>
+        <hr class="m-0">
+      </section>
+      <hr class="m-0">
+      <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section3">
+        <div class="w-100">
+          <h1 class="mb-0">Indoor Navigation techniques
+
+          </h1>
+          <p>
+            The techniques that we will be focusing on this tutorial is integrating deep learning and computer vision algorithms.<br>
+            In this technique, we use smartphone camera to detect immovable objects like doors and windows in indoors to identify the
+            current location.</p>
+          <img src="images/systemflow.jpg" alt="System Flow Diagram" class="mx-auto d-block">
+          <p class="center">System flow diagram</p>
+          <p><b>System flow</b><br>
+            <b>Static Object Detection & Identification: </b>Smartphone Camera captures the images of indoors and sends it to server where the data from the images will be analyzed and deep learning and computer vision will be implemented.
+            Then,Faster-RCNN algorithm integrates region proposal, feature extraction, classification and rectangle-refine into one end-to-end network, and detects and identifies the static object.<br>
+            <b>Obtaining Control Points Coordinates: </b>Control points are those physical feature points on static objects with accurately surveyed coordinate location and can be identified relatively easyily.Below algorithm is used to obtain Pixel
+            Coordinates of Control Points in Test Images
+            <img src="images/controlpoints.jpg" alt="System Flow Diagram" class="mx-auto d-block">
+            <p class="center"> Algorithm to obtain Pixel Coordinates of Control Points in Test Images</p>
+            <img src="images/controlpointoutput.jpg" alt="Sample output" class="mx-auto d-block">
+            <p class="center"> An example of output of above algorithm. The pixel coordinates of control points in test image are obtained from reference image.</p>
+            <b>Position Estimation: </b>The geometric relation between control points in image and object space is determined via collinear equation <br>
+            <b>Distance Estimation: </b>In order to avoid gross error for the final position, distance estimation is then implemented to check the output of collinear equation model.
+          </p>
+
+          <h4>Other Approaches based on computer vision</h4>
+          <h6>VSLAM</h6>
+          <p>
+            Visual simultaneous localization and mapping (VSLAM) technique is used for building a 3D global map of unknown environment while simultaneously keeping track of current location.
+            VSLAM is based on developing visual odometry from RGB-D data from the images. Hence it requires per-pixel depth sensing RGB-D camera which isn’t available in most of the smartphones today. Since depth cannot be directly inferred from a
+            single image from a smartphone camera, it must be calculated through analyzing images in the chain of frames in the video using an Extended Kalman filter. Also, this method has complex computations due to which there could be considerable
+            amount of delay in 3D reconstructions. Hence it is difficult to use VSLAM technique for Indoor navigation solution using current day smartphones.</p>
+
+          <h6>Vanishing Point Calculation</h6>
+          <p>
+            In this method, vanishing points are calculated from lines in consecutive images.Line features from images are selected and the vanishing points are calculated by choosing the pixel getting the maximum intersection points of line
+            pairs.Some of the algorithms used in this techniques are:<br>
+
+
+
+            <b> Gaussian filter: </b>This image processing techniques is used to reduce noise in the captured images. Once the noise reduction is done, the images will be sent for edge detection.
+            <br>
+            <b> Canny edge detection: </b> Edges are detected by the intensity gradient of pixels in the image. Pixels that have gradient magnitude above certain threshold are considered to make an edge.
+            <br>
+            <b> Hough transforms: </b>Lines that are edges has to be distinguished from the rest of the lines in the image. Hough line transform, and circle transform are used to detect lines and circles in the captured images respectively</p>
+          <img src="images/corridor1.jpg" alt="corridor1" class="mx-auto d-block">
+          <img src="images/corridor2.jpg" alt="corridor2" class="mx-auto d-block">
+
+          <p class="center">Image of corridor1 on top and corridor 2 on bottom. Blue lines were found with Hough transformation and the red spot shows the place of the vanishing point </p>
+        </div>
+
+      </section>
+      <hr class="m-0">
+      <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section4">
+        <div class="w-100">
+          <h1 class="mb-0">Success and Failures
+
+          </h1>
+
+
+          <h4>Success</h4>
+          <p>
+            Munich-based 3D indoor mapping and navigation startup NavVis provides computer vision based indoor mapping and navigation solution to industries.<br>
+            Apple maps used WIFI triangulation to help indoor navigation in few airports.<br>
+            Deep Neural network based Autonomous indoor navigation of Micro Aerial Vehicles (MAVs) implementations have provided 70-80% success rate in real time experimental setup.
+
+          </p>
+
+          <h4>Failure</h4>
+          <p>
+
+            Indoor navigation using the sensors incur initial set up and maintenance cost. They can’t be used in large scale.<br>
+
+            Some methods require preloading indoor maps which is not a practical solution as it’s cumbersome and not feasible to get indoor maps of every other indoors that one might visit.<br>
+
+
+          </p>
+
+
+        </div>
+
+      </section>
+      <hr class="m-0">
+
+      <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section5">
+        <div class="w-100">
+          <h1 class="mb-0">Challenges
+
+          </h1>
+
+          <p>Indoor navigation with dark or Poorly lit indoors will be hard to achieve using computer vision techniques</p>
+
+        </div>
+
+      </section>
+      <hr class="m-0">
+      <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section6">
+        <div class="w-100">
+          <h1 class="mb-0">Future
+
+          </h1>
+
+          <p>Indoor positioning and indoor navigation (IPIN) have been organizing conference providing forum for researchers in the field of indoor positioning and navigation. With plenty of papers published and with an active research community like
+            IPIN,
+            It is indeed an area where a lot of research is taking place.</p>
+
+        </div>
+
+      </section>
+      <hr class="m-0">
+      </section>
+      <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section7">
+        <div class="w-100">
+          <h1 class="mb-0">Related Videos
+
+          </h1>
+
+          <div class="row">
+
+            <div class="col-sm-6">
+              <iframe width="420" height="345" src="https://www.youtube.com/embed/2Y08GRYnC3U">
+              </iframe>
+            </div>
+
+            <div class="col-sm-6">
+              <iframe width="420" height="345" src="https://www.youtube.com/embed/WoBcsnEGiB8">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <hr class="m-0">
+
+      <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section8">
+        <div class="w-100">
+          <h1 class="mb-0">Quiz
+
+          </h1>
+          <p>1.Why is sensor based indoor navigation technique not preferred?</p>
+          <form>
+            <div class="radio">
+              <label><input type="radio" name="optradio">a. It incurs initial setup and maintenance cost</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">b.High computational complexity</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">c.Requires RGB-D camera</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">d. All of the above</label>
+            </div>
+          </form><br>
+
+          <p>2.What approach uses visual odometry and RGB-D images? </p>
+          <form>
+            <div class="radio">
+              <label><input type="radio" name="optradio">a. WiFi triangulation </label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">b. VSLAM</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">c.Bluetooth beacons</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">d. None of the above</label>
+            </div>
+          </form><br>
+
+          <p>3.Which algorithm is used for static objects detection and identification ?</p>
+          <form>
+            <div class="radio">
+              <label><input type="radio" name="optradio">a.Faster-RCNN</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">b.Extended Kalman filter</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">c. Gaussian filter</label>
+            </div>
+            <div class="radio">
+              <label><input type="radio" name="optradio">d. Any of the above</label>
+            </div>
+          </form>
+          <p><b>Answers:</b>
+            <br>
+            1.a<br>2.b<br>3.c<br>
+        </div>
+      </section>
+      <hr class="m-0">
+      <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section9">
+        <div class="w-100">
+          <h1 class="mb-0">Source
+
+          </h1>
+
+          <p><a href="https://www.mdpi.com/1424-8220/18/7/2229/htm">An Indoor Positioning System Based on Static Objects in Large Indoor Scenes by Using Smartphone Cameras</a>
+            <br><a href="https://arxiv.org/pdf/1511.04668.pdf">Deep Neural Network for Real-Time Autonomous Indoor Navigation</a><br>
+            <a href="https://www.researchgate.net/publication/228411072_Heading_Change_Detection_for_Indoor_Navigation_with_a_Smartphone_Camera">Heading Change Detection for Indoor Navigation with a Smartphone Camera </a></p>
+
+          <h1>Interesting Readings </h1>
+          <h4>Visual SLAM:</h4><br>
+          <p>
+            <a href="https://ipsjcva.springeropen.com/articles/10.1186/s41074-017-0027-2">Visual SLAM algorithms: a survey from 2010 to 2016</a><br>
+            <a href="https://community.arm.com/developer/tools-software/graphics/b/blog/posts/introducing-slam-technology">Introducing SLAM</a><br>
+            <a href="https://www.doc.ic.ac.uk/~ab9515/introductiontomonocular.html">Monocular Simultaneous Location and Mapping</a><br>
+          </p>
+          <br>
+          <h4>VSLAM based research papers on Indoor Navigation with RGB-D camera:</h4>
+          <p>
+
+            <a href="https://ieeexplore-ieee-org.proxylib.csueastbay.edu/document/8614006"> Monocular SLAM and Obstacle Removal for Indoor Navigation </a><br>
+            <a href="https://ieeexplore-ieee-org.proxylib.csueastbay.edu/document/8737640">Pair-Navi: Peer-to-Peer Indoor Navigation with Mobile Visual SLAM</a><br>
+
+            <a href="https://ieeexplore-ieee-org.proxylib.csueastbay.edu/document/7379390"> A SLAM Based Semantic Indoor Navigation System for Visually Impaired Users</a>
+
+          </p>
+
+        </div>
+
+      </section>
+</div>
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+</body>
+
+</html>
