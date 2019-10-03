@@ -30,14 +30,14 @@
     }
 
     #table_of_content a {
-      padding: 6px 8px 6px 16px;
+      padding: 6px 8px 6px 6px;
       text-decoration: none;
       color: #818181;
       display: block;
     }
 
     div #page-content-wrapper {
-      margin-left: 200px;
+      margin-left: 192px;
       font-size: 15px;
       margin-top: 50px;
       padding-top: 6px;
@@ -48,13 +48,52 @@
 
 
 
-    section {
-      padding-top: 5rem !important;
-      padding-bottom: 5rem !important;
+
+
+    #section1 {
+      padding-top: 30px;
+      background-color: #dfeefb;
     }
 
+    #section2 {
+      padding-top: 30px;
+      background-color: #dffbec;
+    }
 
+    #section3 {
+      padding-top: 30px;
+      background-color: #dfeefb;
+    }
 
+    #section4 {
+      padding-top: 30px;
+      background-color: #dffbec;
+    }
+
+    #section5 {
+      padding-top: 30px;
+      background-color: #dfeefb;
+    }
+
+    #section6 {
+      padding-top: 30px;
+      background-color: #dffbec;
+    }
+
+    #section7 {
+      padding-top: 30px;
+      background-color: #dfeefb;
+    }
+
+    #section8 {
+      padding-top: 30px;
+      background-color: #dffbec;
+    }
+
+    #section9 {
+      padding-top: 30px;
+      background-color: #dfeefb;
+    }
 
     h4 {
       text-align: center;
@@ -69,6 +108,25 @@
 
 <body data-spy="scroll" data-target="#table" data-offset="20">
 
+  <!-- main navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Indoor Navigation Using Computer Vision</a>
+      </div>
+      <div>
+
+        <ul class="nav navbar-nav">
+          <!--      <li><a href="#">About</a></li> -->
+
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+    <!-- end of main navbar -->
+
 
   <div class="d-flex" id="wrapper">
 
@@ -77,7 +135,7 @@
 
 
       <div class="list-group list-group-flush" id="table">
-        <br><br><br><br>
+
         <h4>Table of content</h4>
         <a href="#section1" class="list-group-item list-group-item-action bg-light">Introduction and Problem Definition</a>
         <a href="#section2" class="list-group-item list-group-item-action bg-light">Sensor Possibilities</a>
@@ -89,30 +147,14 @@
         <a href="#section8" class="list-group-item list-group-item-action bg-light">Quiz </a>
         <a href="#section9" class="list-group-item list-group-item-action bg-light">References </a>
 
-        </a>
+
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
 
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <h3 class="navbar-text">Indoor Navigation Using Computer Vision</h3>
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-
-
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
       <div class="container-fluid p-0">
         <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section1">
@@ -132,7 +174,9 @@
 
         </section>
 
-        <hr class="m-0">
+        <hr>
+
+
         <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section2">
           <div class="w-100">
             <h1 class="mb-0">Sensor Possibilities
@@ -147,9 +191,12 @@
             </p>
 
           </div>
-          <hr class="m-0">
+          <hr>
         </section>
+
+
         <hr class="m-0">
+
         <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section3">
           <div class="w-100">
             <h1 class="mb-0">Indoor Navigation techniques based on computer vision
@@ -191,12 +238,13 @@
               <img src="images/slamOverview.jpg" alt="slam overview" class="mx-auto d-block"><br><br>
               <p class="center">SLAM Overview</p>
               <img src="images/slammethods.jpg" alt="slam methods" class="mx-auto d-block"><br>
-                <p class="center">SLAM Methods</p>
+              <p class="center">SLAM Methods</p>
 
               VSLAM is based on developing visual odometry from RGB-D data from the images. Hence it requires per-pixel depth sensing RGB-D camera which isn’t available in most of the smartphones today. Since depth cannot be directly inferred from a
               single image from a smartphone camera, it must be calculated through analyzing images in the chain of frames in the video using an Extended Kalman filter. Also, this method has complex computations due to which there could be
               considerable
-              amount of delay in 3D reconstructions. Hence it is difficult to use VSLAM technique for Indoor navigation solution using current day smartphones.</p>
+              amount of delay in 3D reconstructions. Hence it is difficult to use VSLAM technique for Indoor navigation solution using current day smartphones.
+            </p>
 
             <h3>3.Computer Vision + Deep learnings</h3>
             <p>
@@ -223,7 +271,9 @@
           </div>
 
         </section>
+
         <hr class="m-0">
+
         <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section4">
           <div class="w-100">
             <h1 class="mb-0">Success and Failures
@@ -254,6 +304,7 @@
           </div>
 
         </section>
+
         <hr class="m-0">
 
         <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section5">
@@ -274,7 +325,9 @@
           </div>
 
         </section>
+
         <hr class="m-0">
+
         <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section6">
           <div class="w-100">
             <h1 class="mb-0">Future
@@ -287,9 +340,10 @@
               It is indeed an area where a lot of research is taking place.</p>
 
           </div>
-
         </section>
+
         <hr class="m-0">
+
         </section>
         <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section7">
           <div class="w-100">
@@ -312,6 +366,8 @@
           </div>
 
         </section>
+
+
         <hr class="m-0">
 
         <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section8">
@@ -368,13 +424,16 @@
             </form>
             <p><b>Answers:</b>
               <br>
-              1.a<br>2.b<br>3.c<br>
+              1.a<br>2.b<br>3.a<br>
           </div>
         </section>
+
+
         <hr class="m-0">
+
         <section class="home-section p-3 p-lg-5 d-flex align-items-center" id="section9">
           <div class="w-100">
-            <h1 class="mb-0">Source
+            <h1 class="mb-0">References
 
             </h1>
 
@@ -383,13 +442,13 @@
               <a href="https://www.researchgate.net/publication/228411072_Heading_Change_Detection_for_Indoor_Navigation_with_a_Smartphone_Camera">Heading Change Detection for Indoor Navigation with a Smartphone Camera </a></p>
 
             <h1>Interesting Readings </h1>
-            <h3>Visual SLAM:</h3><br>
+            <h3>Visual SLAM:</h3>
             <p>
               <a href="https://ipsjcva.springeropen.com/articles/10.1186/s41074-017-0027-2">Visual SLAM algorithms: a survey from 2010 to 2016</a><br>
               <a href="https://community.arm.com/developer/tools-software/graphics/b/blog/posts/introducing-slam-technology">Introducing SLAM</a><br>
               <a href="https://www.doc.ic.ac.uk/~ab9515/introductiontomonocular.html">Monocular Simultaneous Location and Mapping</a><br>
             </p>
-            <br>
+
             <h3>VSLAM based research papers on Indoor Navigation with RGB-D camera:</h3>
             <p>
 
@@ -403,6 +462,9 @@
           </div>
 
         </section>
+
+
+
       </div>
 
     </div>
