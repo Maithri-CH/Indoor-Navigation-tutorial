@@ -241,10 +241,12 @@
 
               <img src="images/slam2.jpg" alt="slam system" class="mx-auto d-block"><br>
               <p>Fig <a href="#ref3">[3] </a>SLAM based System architecture</p><br>
+              The above system architecture <a href="#ref3">[3] </a> uses a visual odometry algorithm based on RGB-D data to estimate the user's position and orientation and refine the orientation error using the IMU. Here, A head mounted camera is used to recognize the door numbers and RGB-D sensor is used to detect major landmarks such as corridor corners. By matching the detected landmarks against the corresponding features on the digitalized floor map, the system localizes the user, and provides verbal instruction to guide the user to the desired destination. <br><br>
 
 
               <img src="images/slammethods.jpg" alt="slam methods" class="mx-auto d-block"><br>
               <p>Fig <a href="#ref4">[4] </a> SLAM Methods</p>
+
 
               VSLAM is based on developing visual odometry from RGB-D data from the images.<a href="#ref5">[5] </a> Hence it requires per-pixel depth sensing RGB-D camera which isn’t available in most of the smartphones today. Since depth cannot be
               directly inferred from a
