@@ -3,7 +3,7 @@
 
 <head>
 
-  <meta charset="utf-8">
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
@@ -255,7 +255,7 @@
             <h3>3.Computer Vision + Deep learnings</h3>
             <p>
               <br>
-              In this technique, deep learning and computer vision algorithms. are integrated.Smartphone camera is used to detect immovable objects like doors and windows in indoors to identify the
+              In this technique, deep learning and computer vision algorithms are integrated.Smartphone camera is used to detect immovable objects like doors and windows in indoors to identify the
               current location.</p>
             <img src="images/systemflow.jpg" alt="System Flow Diagram" class="mx-auto d-block">
             <p>Fig<a href="#ref5">[5] </a> System flow diagram</p>
@@ -263,6 +263,7 @@
               <b>Static Object Detection & Identification: </b>Smartphone Camera captures the images of indoors and sends it to server where the data from the images will be analyzed and deep learning and computer vision will be implemented.
               Then,Faster-RCNN algorithm integrates region proposal, feature extraction, classification and rectangle-refine into one end-to-end network, and detects and identifies the static object.<br>
               <b>Obtaining Control Points Coordinates: </b>Control points are those physical feature points on static objects with accurately surveyed coordinate location and can be identified relatively easyily.Below algorithm is used to obtain
+            </p>
               Pixel
               Coordinates of Control Points in Test Images
               <img src="images/controlpoints.jpg" alt="System Flow Diagram" class="mx-auto d-block">
@@ -271,7 +272,6 @@
               <p>Fig<a href="#ref6">[6] </a> An example of output of above algorithm. The pixel coordinates of control points in test image are obtained from reference image.</p>
               <b>Position Estimation: </b>The geometric relation between control points in image and object space is determined via collinear equation <br>
               <b>Distance Estimation: </b>In order to avoid gross error for the final position, distance estimation is then implemented to check the output of collinear equation model.
-            </p>
 
 
           </div>
@@ -290,8 +290,8 @@
             <h3>Success</h3>
             <p>
               Munich-based 3D indoor mapping and navigation startup NavVis provides computer vision based indoor mapping and navigation solution to industries.<br>
-              Apple maps used WIFI triangulation to help indoor navigation in few airports.<br>
-              Deep Neural network based Autonomous indoor navigation of Micro Aerial Vehicles (MAVs) implementations have provided 70-80% success rate in real time experimental setup.
+              Deep Neural network based Autonomous indoor navigation of Micro Aerial Vehicles (MAVs) implementations have provided 70-80% success rate in real time experimental setup.<a href="#ref7">[7] </a><br>
+              Apple maps used WIFI triangulation to help indoor navigation in few airports.
 
             </p>
 
@@ -362,11 +362,13 @@
               <div class="col-sm-6">
                 <iframe width="420" height="345" src="https://www.youtube.com/embed/2Y08GRYnC3U">
                 </iframe>
+                <p>Autonomous Indoor Flight using Deep Learning.<a href="#ref7">[7] </a> </p>
               </div>
 
               <div class="col-sm-6">
-                <iframe width="420" height="345" src="https://www.youtube.com/embed/WoBcsnEGiB8">
+                <iframe width="420" height="345" src="https://youtube.com/embed/C18t5yve-Xk">
                 </iframe>
+                <p>Indoor navigation using computer vision tutorial</p>
               </div>
             </div>
           </div>
@@ -413,7 +415,7 @@
               </div>
             </form><br>
 
-            <p>3.Which algorithm is used for static objects detection and identification ?</p>
+            <p>3.Which algorithm is used for  for generating region proposals and a network using these proposals to detect objects ?</p>
             <form>
               <div class="radio">
                 <label><input type="radio" name="optradio">a.Faster-RCNN</label>
@@ -516,27 +518,30 @@
               </p>
             </div>
 
-            <h3>Further reading:</h3>
+
 
 
             <div id="ref7">
 
               <p>
-                1. Kim, Dong & Chen, Tsuhan. (2015).<a href="https://arxiv.org/pdf/1511.04668.pdf">Deep Neural Network for Real-Time Autonomous Indoor Navigation </a> arXiv:1511.04668v2 [cs.CV] 26 Nov 2015 <br>
+                [7] Kim, Dong & Chen, Tsuhan. (2015).<a href="https://arxiv.org/pdf/1511.04668.pdf">Deep Neural Network for Real-Time Autonomous Indoor Navigation </a> arXiv:1511.04668v2 [cs.CV] 26 Nov 2015 <br>
                 Synopsis: In this paper, authors propose a practical system in which a quadcopter autonomously navigates indoors and finds a specific target, i.e. a book bag, by using a single camera. A deep learning model, Convolutional Neural
                 Network (ConvNet), is used to learn a controller strategy that mimics an expert pilot’s choice of action.
                 <br>Reliability: Prof Chen Tsuhan is the Deputy President (Research and Technology) at National University of Singapore. He is currently the Chief Scientist of AI Singapore. Prior to his current appoint he was the Dean of the College
-                of Engineering[1]at Nanyang Technological University from 2015 to 2017[2]. He was previously Director of the School of Electrical and Computer Engineering at Cornell University from 2009 to 2013.[3][4] He is also an Honorary Professor
+                of Engineering[1]at Nanyang Technological University from 2015 to 2017. He was previously Director of the School of Electrical and Computer Engineering at Cornell University from 2009 to 2013.He is also an Honorary Professor
                 in Computer Science at National Chao Tung University, Taiwan. arXiv is a premier repository of electronic preprints approved for posting after moderation, but not full peer review.
               </p>
             </div>
 
+
+            <h3>Further reading:</h3>
+
             <div id="ref8">
 
               <p>
-                2.<a href="https://www.doc.ic.ac.uk/~ab9515/introductiontomonocular.html">Monocular Simultaneous Location and Mapping</a> <br>
+                1.<a href="https://www.doc.ic.ac.uk/~ab9515/introductiontomonocular.html">Monocular Simultaneous Location and Mapping</a> <br>
                 Synopsis: Information on various SLAM methods and algorithms.<br>
-                Reliability: This website is by students of Department of Computing, Imperial College London. This website forms a part of group's project for their Computing Topics course.
+                Reliability: This website is by students of Department of Computing, Imperial College London. This website forms a part of a group's project for their Computing Topics course.
               </p>
             </div>
 
